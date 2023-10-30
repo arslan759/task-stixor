@@ -19,7 +19,9 @@ export default function RootLayout({
       <body>
         <Navbar />
 
-        <div className="w-full bg-[#9106F8]">{children}</div>
+        <div className="w-full bg-[#9106F8] min-h-[400px] md:min-h-[600px]">
+          {children}
+        </div>
 
         <Footer />
       </body>

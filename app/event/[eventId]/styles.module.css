@@ -4,7 +4,6 @@
   box-shadow: 2px 2px 22px 0px #4c1ea7;
   padding: 40px 32px;
   width: 95%;
-  min-height: 600px;
 }
 
 @media screen and (max-width: 767px) {
