@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Tomorrow";
+  src: local("Tomorrow"),
+    /* url(../public/fonts/Tomorrow/Tomorrow-Black.ttf) format("truetype"), */
+      url(../public/fonts/Tomorrow/Tomorrow-Regular.ttf) format("truetype"),
+    url(../public/fonts/Tomorrow/Tomorrow-Bold.ttf) format("truetype"),
+    url(../public/fonts/Tomorrow/Tomorrow-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin_Sans"),
+    url(../public/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+      format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,14 +30,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
