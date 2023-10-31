@@ -155,7 +155,7 @@ const EventCard = () => {
               },
             }}
           >
-            No events not found
+            No events found
           </Typography>
         )}
       </div>
