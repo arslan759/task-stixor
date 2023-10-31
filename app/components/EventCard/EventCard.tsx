@@ -55,7 +55,7 @@ const EventCard = () => {
       },
     });
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
 
     setTotalCount(data.count);
     setEvents(data.results);

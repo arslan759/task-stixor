@@ -30,7 +30,7 @@ const EventPage = ({ params }: { params: { eventId: string } }) => {
       },
     });
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
 
     setEvent(data.results[0]);
     setLoading(false);

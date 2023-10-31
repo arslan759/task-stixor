@@ -78,10 +78,7 @@ const EventsTable = ({ events }: Props) => {
                 <TableCell>
                   <div className="w-fit">
                     <Link href={`/event/${row?.id}`}>
-                      <PrimaryBtn
-                        text="View Details"
-                        handleClick={() => console.log("View")}
-                      />
+                      <PrimaryBtn text="View Details" />
                     </Link>
                   </div>
                 </TableCell>
