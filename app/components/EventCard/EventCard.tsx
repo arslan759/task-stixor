@@ -122,7 +122,7 @@ const EventCard = () => {
               }}
             />
           </div>
-        ) : events ? (
+        ) : events.length > 0 ? (
           <>
             <div className="mt-[56px] md:mt-[64px]">
               <EventsTable events={events} />
@@ -145,6 +145,7 @@ const EventCard = () => {
               fontWeight: "700 !important",
               lineHeight: "normal",
               fontFamily: "Josefin Sans",
+              marginTop: "56px !important",
               textTransform: "capitalize",
               color: "#7911EA",
               textAlign: "center",
@@ -154,7 +155,7 @@ const EventCard = () => {
               },
             }}
           >
-            Event not found
+            No events not found
           </Typography>
         )}
       </div>
